@@ -1,9 +1,8 @@
-<i><h2>This is the Implementation of the Web UI for the application<h2>.<b> The Techstack which is use bulding up the application is:<br>
+<i><h2>This is the Implementation of the Web UI for the application</h2>.<b> The Techstack which is use bulding up the application is:<br>
  1-Java<br>
  2-Spring Boot Framework<br>
  3-Template By ThymeLeaf and Bootstarp<br>
  4-MongoDB<br>
- </b>
 
 
 Below are the step by step, how application works -
