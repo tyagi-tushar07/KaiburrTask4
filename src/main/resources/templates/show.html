@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+    <head>
+        <title>Show Servers</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h3>
+                  Servers
+                </h3>
+                <h2 th:text="${server.name}"></h2>
+                <dl class="list">
+                    <dt>Server Language</dt>
+                    <dd th:text="${server.language}"></dd>
+                    <dt>Server Framework</dt>
+                    <dd th:text="${server.framework}"></dd>
+                </dl>
+                <form action="/delete">
+                    <input type="hidden" name="id" th:value="${server.id}" />
+                    <h2><input type="submit" class="btn btn-danger" value="Delete" onclick="return confirm('Are you sure?');" />
+                </form>
+                <a href="/server" class="btn btn-primary"><span class="glyphicon glyphicon-list">Servers List</a></span>
+            </div>
+        </div>
+    </body>
+</html>
